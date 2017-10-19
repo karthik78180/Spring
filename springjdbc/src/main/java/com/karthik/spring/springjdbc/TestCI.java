@@ -14,6 +14,8 @@ public class TestCI {
 		int result = jdbcTemplate.update(sql, new Integer(1), "karthik", "kavuru");
 		System.out.println("no of records inserted :"+result);
 		
+		((ClassPathXmlApplicationContext) context).close();
+		
 
 	}
 
